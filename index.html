@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+            
+    </head>
+    <body>
+        <div>
+            <h1>Basketball ScoreCard</h1>
+        </div>
+        <div class="emoji">🏀🏀</div>
+        <div class="container" id="scores">
+            <div class="column">
+                <h3 class="home_title">HOME</h3>
+                <h2 class="score_home" id="count-el">0</h2>
+                <div class="counters">
+                    <button class="counter-btn" onclick="addOneHome()">+1</button>
+                    <button class="counter-btn" onclick="addTwoHome()">+2</button>
+                    <button class="counter-btn" onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="guest_title">GUEST</h3>
+                <h2 class="score_guest" id="guest-el">0</h2>
+                <div class="counters">
+                    <button class="counter-btn" onclick="addOneGuest()">+1</button>
+                    <button class="counter-btn" onclick="addTwoGuest()">+2</button>
+                    <button class="counter-btn" onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="restart">
+            <button class="restart-btn" id="restart-btn-el" onclick="newGame()"><a href="#">New Game</a></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
